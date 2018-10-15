@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ECE Events - Dexterix</title>
+  <link rel="shortcut icon" href="images/dexterix-1.png">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+       <link  type="text/css" rel="stylesheet"  href="css/bootstrap.css" />
+        <link href="css/agency.css" rel="stylesheet">
+    <style>
+
+	          body{
+                margin-top:50px;
+                 background-image: url("image/ece/ece-background.jpeg");
+            }
+         @media (min-width: 400px) {
+          .navbar-fixed-top {
+                min-height: 59px!important;
+            }
+
+            .navbar-nav > li > a {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                padding-left: 0px;
+                line-height: 59px;
+            }
+              }
+           @media (max-width: 400px) {
+           .navbar-nav > li > a {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                margin-left: 20px;
+                 line-height: 40px;
+
+            }
+           }
+            .img-fluid{
+              height:300;
+              width:450px;
+              opacity: 0.9;
+
+            }
+            .section-heading{
+              height:100px;
+                font-weight: 700;
+                font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+            }
+            .section-subheading{
+                  font-weight: 700;
+                  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                  text-transform: uppercase;
+
+            }
+              @media (max-width: 780px) {
+              #heading{
+               font-size: 30px!important;
+               font-weight: 300px;}
+              }
+
+                @media (max-width: 450px) {
+                    #title{
+                       height:70px!important;
+                    }
+
+              #heading{
+               font-size: 15px!important;
+               font-weight: 100px;}
+              }
+            .bs-flipper {
+              -webkit-perspective: 1000;
+              -moz-perspective: 1000;
+              -o-perspective: 1000;
+              perspective: 1000;
+
+            }
+
+              .bs-flipper:hover .flipper,
+              .bs-flipper.hover .flipper {
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+              }
+
+            .bs-flipper, .front, .back {
+              width: 100%;
+            height: 380px;;
+
+            }
+
+            .flipper {
+              -webkit-transition: 0.6s;
+              -webkit-transform-style: preserve-3d;
+
+              -moz-transition: 0.6s;
+              -moz-transform-style: preserve-3d;
+
+              -o-transition: 0.6s;
+              -o-transform-style: preserve-3d;
+
+              transition: 0.6s;
+              transform-style: preserve-3d;
+
+              position: relative;
+            }
+
+            .front, .back {
+              -webkit-backface-visibility: hidden;
+              -moz-backface-visibility: hidden;
+              -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+
+            .front {
+
+              z-index: 2;
+            }
+
+            .back {
+              -webkit-transform: rotateY(180deg);
+              -moz-transform: rotateY(180deg);
+              -o-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+
+
+            }
+
+            .front .name {
+              font-size: 2em;
+              display: inline-block;
+              background: rgba(33, 33, 33, 0.9);
+              color: #f8f8f8;
+              font-family: Courier;
+              padding: 5px 10px;
+              border-radius: 5px;
+              bottom: 60px;
+              left: 25%;
+              position: absolute;
+              text-shadow: 0.1em 0.1em 0.05em #333;
+
+              -webkit-transform: rotate(-20deg);
+              -moz-transform: rotate(-20deg);
+              -o-transform: rotate(-20deg);
+              transform: rotate(-20deg);
+            }
+
+            #hovertext a p {display:none;}
+            #hovertext a:hover p {display:block;}
+
+            footer{
+                margin-top:20px;
+                height:50px;
+                padding: 5px 0!important;
+
+            }
+             @media (max-width: 1200px) {
+             footer{
+                margin-top:20px;
+                height:100px;
+                padding: 5px 0!important;
+             }
+            }
+            @media (max-width: 700px) {
+             footer{
+                margin-top:20px;
+                height:150px;
+                padding: 5px 0!important;
+             }
+            }
+             @media (max-width: 500px) {
+             footer{
+                margin-top:20px;
+                height:180px;
+                padding: 5px 0!important;
+             }
+            }
+
+            #footer span.copyright{
+                font-size:90%;
+                line-height:40px;
+                text-transform:none;
+                font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                text-transform:uppercase}
+                footer ul.quicklinks{font-size:90%;
+                    line-height:40px;
+                    margin-bottom:0;
+                    text-transform:none;
+                    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                text-transform:uppercase}
+                .modal-backdrop {
+                  opacity: 0.3!important;
+                }
+                 @media (min-width: 950px) {
+                #event{
+                  width:800px;height:600px;
+                }
+                #carousel-example-generic{
+                  width:800px;height:600px;
+                }
+                 }
+               @media (max-width: 500px) {
+                #event{
+                  height:250px;
+                }
+
+                 }
+
+              @media (min-width: 576px) {
+                .modal-dialog {
+                 margin-top:30px;
+                 margin-bottom: 30px;
+                 margin-left: auto;
+                 margin-right: auto;
+
+                }}
+                #pdf{
+                   font-size:14px!important;
+                }
+	 </style>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;" >
+
+            <div class="container">
+                <div class="navbar-header" style="margin-left:-28px;">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu" >
+                        <!--
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                        -->
+                    Menu
+                    </button>
+
+                    <a href="index.html" class="navbar-brand"  id="dextrix" style="color: white;  line-height: 20px; font-size:25px;     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;" >
+                          <img alt="Brand" src="images/dexterix-1.png" style="height:40px; line-height: 20px; margin-top:-6px; ">
+                        DEXTERIX
+                    </a>
+
+                      &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+                </div>
+
+                <div class="collapse navbar-collapse" id="primary-menu">
+                    <ul class="nav navbar-nav"  >
+                       <li><a href="index.html"  style="color: white; ">HOME</a></li>
+                        <li><a href="about-us.html"  style="color: white; ">ABOUT</a></li>
+                        <li><a href="Makeathon/makeathon.html"  style="color: white; ">MAKEATHON</a></li>
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">EVENTS</a>
+                            <ul class="dropdown-menu" style="background-color: black;color:#424242; ">
+                                 &nbsp <b>INTRA-COLLEGE</b>
+                                 <li><a href="cse_events.html" style="color: white;">Computer Science</a></li>
+                                <li><a href="ise_events.html" style="color: white;">Information Science</a></li>
+                                <li><a href="civil_events.html" style="color: white;">Civil Engineering</a></li>
+                                <li><a href="me_events.html" style="color: white;">Mechanical Engineering</a></li>
+                                <li><a href="ece_events.html" style="color: white;">Electronics and Communcation</a></li>
+                                <li><a href="mba_events.html" style="color: white;">MBA</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li class="dropdown" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">REGISTER</a>
+                            <ul class="dropdown-menu" style="background-color: black;color:#424242; "> &nbsp <b>INTRA-COLLEGE</b>
+                                 <li><a href="register_solo.php" style="color: white;"  id="hovertext"  title="SyntactiX,Tech Say">Solo Events </a></li>
+                                <li><a href="register_group2.php" style="color: white;">Team of 2</a></li>
+                                <li><a href="register_group3.php" style="color: white;">Team of 3</a></li>
+                                <li><a href="register_group4.php" style="color: white;">Team of 4</a></li>
+                                <li><a href="register_group7.php" style="color: white;">Team of 7</a></li>&nbsp <b>INTER-COLLEGE</b>
+                                 <li><a href="regis_makeathon_solo.php" style="color: white;">Makeathon Solo</a></li>
+                                 <li><a href="regis_makeathon_group.php" style="color: white;">Makeathon - Team of 3</a></li>
+                            </ul>
+
+                        </li>
+                       
+                        <li><a data-toggle="modal" data-target=".bs-example-modal-lg" style="color:white; ">EVENTS SCHEDULE</a></li>
+ <li><a href="contact-us.php" style="color:white; ">CONTACT</a></li>
+
+                    </ul>
+                </div>
+            </div>
+  </nav>
+
+       <div class="text-center"id="title" style="background-color:black; opacity:0.75;height:80px; ">
+        <h2 class="section-heading " id="heading"  style="color:#EEEEEE; font-size: 40px;font-family: 'Oswald', sans-serif;">DEPARTMENT OF ELECTRONICS AND COMMUNICATION <span id="text">E</span>
+          <span  id="text">V</span>
+          <span  id="text">E</span>
+          <span  id="text">N</span>
+          <span  id="text">T</span>
+          <span  id="text">S</span>
+        </h2>
+            <style>
+              @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+                #text {
+                  display: inline-block;
+
+                  font-size: 40px;
+                  line-height: 100px;
+                  font-family: "Oswald", sans-serif;
+                  position: relative;
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                  animation: slide 2s linear infinite;
+                  padding:0px;
+                  background-size: auto 400px;
+                  background-position: left 0px;
+                  background-image: linear-gradient(to bottom, #662345 0px, #662345 100px, black 100px, #661510 102px, #661510 130px, black 130px, #276e97 132px, #276e97 180px, black 180px, #af852d 182px, #af852d 200px, black 200px, #662345 202px, #662345 240px, black 240px, #661510 242px, #661510 300px, black 300px, #276e97 302px, #276e97 350px, black 350px, #af852d 352px, #af852d 398px, black 399px, black 400px);
+                }
+                /*
+                span:nth-child(odd) {
+                  top: 30px;
+                  background-image: linear-gradient(to bottom, #662345 0px, #662345 70px, black 70px, #661510 72px, #661510 100px, black 100px, #276e97 102px, #276e97 150px, black 150px, #af852d 152px, #af852d 170px, black 170px, #662345 172px, #662345 210px, black 210px, #661510 212px, #661510 270px, black 270px, #276e97 272px, #276e97 320px, black 320px, #af852d 322px, #af852d 370px);
+                }*/
+                @media only screen and (max-width: 550px) {
+
+                  #text {
+                      font-size: 1em;
+                  }
+
+                }
+
+
+                @keyframes slide {
+                  100% {
+                    background-position: left -400px;
+                  }
+                }
+
+          </style>
+
+
+      </div>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div style="padding-left:35px;padding-right:35px;">
+        <div class="row" >
+		      <div class="col-lg-12 text-center">
+
+          </div>
+        </div>
+
+       </br></br>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+
+            <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');" >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="image/ece/ece-circuitrix.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Circuitrix</h4>
+                    <p class="text-muted">Are you a Debugger??</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 4th November, 2017</p>
+                          <p>Time: 8:30am to 10:30am</p>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="image/ece/ece-circuitrix.jpg" alt="">
+                  </a>
+                   <div class="portfolio-caption">
+                    <h4>Circuitrix</h4>
+                    <p class="text-muted">Are you a Debugger??</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');" >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content">
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="image/ece/ece-brainiax.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Brainiax</h4>
+                    <p class="text-muted">Put your Brain to the test</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                    <div class="portfolio-hover">
+                      <div class="portfolio-hover-content" style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 4th November, 2017</p>
+                          <p>Time: 12:30am to 2:30pm</p>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="image/ece/ece-brainiax.jpg" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                    <h4>Brainiax</h4>
+                    <p class="text-muted">Put your Brain to the test</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item" >
+            <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                       <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+
+                        </div>
+                      </div>
+                        <img class="img-fluid" src="image/ece/ece-ramrom.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Ram Rom Evoke</h4>
+                        <p class="text-muted">if you know it.. you win it !!</p>
+                      </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                       <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 3rd November, 2017</p>
+                          <p>Time: 2:30pm to 5:30pm</p>
+                        </div>
+                      </div>
+                        <img class="img-fluid" src="image/ece/ece-ramrom.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                      <h4>Ram Rom Evoke</h4>
+                      <p class="text-muted">if you know it.. you win it !!</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="row">
+            <div class="col-md-4 col-sm-6  portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');" >
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-advertise.jpeg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Advertise It</h4>
+                        <p class="text-muted">Can you Convince us??</p>
+                      </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content" style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 3rd November, 2017</p>
+                          <p>Time: 10:30am to 1:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-advertise.jpeg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Advertise It</h4>
+                        <p class="text-muted">Can you Convince us??</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="image/ece/ece-typo.jpeg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                          <h4>Typo Interface</h4>
+                          <p class="text-muted">Debug and interface</p>
+                        </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 1</p>
+                          <p>Date: 4th November, 2017</p>
+                          <p>Time: 9:30am to 12:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-typo.jpeg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Typo Interface</h4>
+                        <p class="text-muted">Debug and interface</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="image/ece/ece-led.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                          <h4>LED Design</h4>
+                          <p class="text-muted">Showoff your creativity!</p>
+                        </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 3rd November, 2017</p>
+                          <p>Time: 10:30am to 1:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-led.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>LED Design</h4>
+                        <p class="text-muted">Showoff your creativity!</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="image/ece/ece-scrap.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                          <h4>Scraptures</h4>
+                          <p class="text-muted">Showoff your creativity !!</p>
+                        </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 3rd November, 2017</p>
+                          <p>Time: 1:30pm to 4:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-scrap.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Scraptures</h4>
+                        <p class="text-muted">Showoff your creativity !!</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="image/ece/ece-begborrow.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                          <h4>Beg n Borrow</h4>
+                          <p class="text-muted">Beg, Borrow, dont steal!!</p>
+                        </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 2</p>
+                          <p>Date: 3rd November, 2017</p>
+                          <p>Time: 10:30am to 2:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-begborrow.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Beg n Borrow</h4>
+                        <p class="text-muted">Beg, Borrow, dont steal!!</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                  <div class="front">
+                    <!-- front content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                          <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                          </div>
+                          <img class="img-fluid" src="image/ece/ece-court.jpg" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                          <h4>Atria Court Room</h4>
+                          <p class="text-muted">Its time to be judged!!</p>
+                        </div>
+                  </div>
+                  <div class="back">
+                    <!-- back content -->
+                      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"style="margin-top:-40px;">
+                          <p>Team Size: 4</p>
+                          <p>Date: 4th November, 2017</p>
+                          <p>Time: 10:30am to 02:30pm</p>
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/ece-court.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Atria Court Room</h4>
+                        <p class="text-muted">Its time to be judged!!</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+         </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+             <div class="bs-flipper" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                          </div>
+                        </div>
+                        <img class="img-fluid" src="image/ece/dota2.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>DOTA 2 (Tournament)</h4>
+                        <p class="text-muted">The game is on..</p>
+                      </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content" style="margin-top:-40px;">
+                          <p>Team Size: 4</p>
+                          <p>Date: 3rd,4th November, 2017</p>
+                          <p>Time: 8:30am to 4:30pm</p>
+                        </div>
+                      </div>
+                      <img class="img-fluid" src="image/ece/dota2.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                      <h4>DOTA 2 (Tournament)</h4>
+                      <p class="text-muted">The game is on..</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+      <div class="modal-dialog modal-lg" >
+        <div class="modal-content" id="event" >
+          <a id="pdf" class="text-center" style="display:block;color:#3366BB ;" href="image/general/Schedule.pdf" download>
+                      Download PDF
+                          </a>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="img-responsive" src="image/general/schedule1.jpg" alt="...">
+                      <div class="carousel-caption">
+
+                      </div>
+
+
+                  </div>
+
+                  <div class="item">
+                    <img class="img-responsive" src="image/general/schedule2.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+
+        </div>
+      </div>
+  </div>
+
+
+    <!-- Footer -->
+     <footer style="background-color: black;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span style="color: #E0E0E0;" class="copyright">Developed by: &nbsp Saarah Asad ,  &nbsp John Karamchand</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/DexteriX2k17">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/code.ait/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/dexterix2k17/">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a style=" color: #E0E0E0;" href="https://atria.edu/">Atria Institute of Technology</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+
+       <h2>Circutrix</h2>
+       <p class="item-intro text-muted">Are you a Debugger??</p>
+       <img class="img-fluid d-block mx-auto" src="image/ece/ece-circuitrix.jpg" alt="">
+       <div class="row">
+
+       <p>A platform to express the talent in circuit debugging. Occurrence of errors is common in circuits and it is a complicated task debugging them. Here we provide you an opportunity to show off your skills to rectify the glitch in the circuit and make it right.
+
+       </p>
+     </div>
+
+       <ul class="list-unstyled">
+  <li><b>Entry:</b> 2 per team</li>
+  <li><b>Duration:</b> 2 hours of fun</li>
+  <li><b>Where:</b>Classroom</li>
+</ul>
+
+
+   </div>
+
+
+
+
+
+
+   <button class="btn btn-primary" data-dismiss="modal" type="button">
+     <i class="fa fa-times"></i>
+     Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+
+                         <h2>Brainiax</h2>
+                         <p class="item-intro text-muted">Put your Brain to the test</p>
+                         <img class="img-fluid d-block mx-auto" src="image/ece/ece-brainiax.jpg" alt="">
+                         <div class="row">
+
+                         <p> A mind sport to test your knowledge in the vast field of electronics and communication. Mind bogging questions from basic concepts of electronics to high end technologies of the industry. </p>
+                       </div>
+
+                         <ul class="list-unstyled">
+                    <li><b>Entry:</b> 2 per team</li>
+                    <li><b>Duration:</b> 2 hours of fun</li>
+                    <li><b>Where:</b> Classroom</li>
+                  </ul>
+
+
+                     </div>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Ram Rom Evoke</h2>
+                  <p class="item-intro text-muted">if you know it .. u win it !!</p>
+                  <img class="img-fluid d-block mx-auto" src="image/ece/ece-ramrom.jpg" alt="">
+                  <div class="row">
+
+                  <p>Know everything about electronics!?? Gear up!  Put all your wires on the right place. Test yourself. Guess it right by identifying each thing shown. Make sure you don’t run off time!
+                  </p>
+                </div>
+
+                  <ul class="list-unstyled">
+             <li><b>Entry:</b> 2 per team.</li>
+             <li><b>Duration:</b> 3 hours of fun</li>
+             <li><b>Where:</b> classroom</li>
+           </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Advertise it</h2>
+                  <p class="item-intro text-muted">Can you convince us??</p>
+                  <img class="img-fluid d-block mx-auto" src="image/ece/ece-advertise.jpeg" alt="">
+                  <div class="row">
+
+                  <p>Have great enacting skills and technical knowledge??  Reach the judges mind body and soul by advertising the electronic component by adding up all the pros of the given electronic or electrical concept.
+                   </p>
+                </div>
+
+                  <ul class="list-unstyled">
+
+                    <li><b>Props limit: 2 per team (should be got by the team)</b></li>
+             <li><b>Entry:</b> 2 per team</li>
+             <li><b>Duration:</b> 32 hours of fun</li>
+             <li><b>Where:</b> Classroom</li>
+           </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Typo Interface</h2>
+                  <p class="item-intro text-muted">Debug and Interface</p>
+                  <img class="img-fluid d-block mx-auto" src="image/ece/ece-typo.jpeg" alt="">
+                  <div class="row">
+
+                  <p> They would have to clear all errors in the time limit. Top teams would qualify to the next round. It could be C or C++, microprocessor or microcontroller.
+                    They would be given programs with errors which should be debugged
+and then interfaced. Fastest team doing it would win.
+
+                   </p>
+                </div>
+
+                  <ul class="list-unstyled">
+             <li><b>Entry:</b> solo event</li>
+             <li><b>Duration:</b> 3 hour of fun</li>
+             <li><b>Where:</b> ECE lab</li>
+           </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>LED Design</h2>
+                  <p class="item-intro text-muted">Showoff your creativity !!</p>
+                  <img class="img-fluid d-block mx-auto" src="image/ece/ece-led.jpg" alt="">
+                  <div class="row">
+
+                  <p> Event consists of one round to make a design using LED lights. the most beautiful and creative design wins.
+
+                   </p>
+                </div>
+
+                  <ul class="list-unstyled">
+             <li><b>Entry:</b> 2 per team</li>
+             <li><b>Duration:</b> 3 hour of fun</li>
+             <li><b>Where:</b> ECE lab</li>
+           </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 7 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl"></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                    <div class="modal-body">
+                      <!-- Project Details Go Here -->
+                      <h2>Scraptures</h2>
+                      <p class="item-intro text-muted">Show off your creativity !!</p>
+                      <img class="img-fluid d-block mx-auto" src="image/ece/ece-scrap.jpg" alt="">
+                      <div class="row">
+
+                      <p> Participants should create a model from the scrap components given and the best most creative model will be declared winner.
+
+
+                       </p>
+                    </div>
+
+                      <ul class="list-unstyled">
+                 <li><b>Entry:</b> 2 per team</li>
+                 <li><b>Duration:</b> 3 hour of fun</li>
+                 <li><b>Where:</b> Classroom</li>
+               </ul>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Modal 8 -->
+            <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                      <div class="rl"></div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                          <!-- Project Details Go Here -->
+                          <h2>Beg n Borrow</h2>
+                          <p class="item-intro text-muted">Get it Somehow !!</p>
+                          <img class="img-fluid d-block mx-auto" src="image/ece/ece-begborrow.jpg" alt="">
+                          <div class="row">
+
+                          <p> You can plead, beg or use your charm to get all the items enlisted within the given time limit. (No using transportation and purchasing).
+
+
+                           </p>
+                        </div>
+
+                          <ul class="list-unstyled">
+                     <li><b>Entry:</b> 2 per team</li>
+                     <li><b>Duration:</b> 4 hours</li>
+                     <li><b>Where:</b> Ground</li>
+                   </ul>
+                          <button class="btn btn-primary" data-dismiss="modal" type="button">
+                            <i class="fa fa-times"></i>
+                            Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Modal 9 -->
+                <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                          <div class="rl"></div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                              <!-- Project Details Go Here -->
+                              <h2>Atria Court Room</h2>
+                              <p class="item-intro text-muted">Its time to be judged !!</p>
+                              <img class="img-fluid d-block mx-auto" src="image/ece/ece-court.jpg" alt="">
+                              <div class="row">
+
+                              <p> Gather your wits and guts to take part in a battlefield of arguments to speak for your client and against the opposition
+
+                               </p>
+                            </div>
+
+                              <ul class="list-unstyled">
+                         <li><b>Entry:</b> 4 per team</li>
+                         <li><b>Duration:</b> 4 hours</li>
+                         <li><b>Where:</b> Classroom</li>
+                       </ul>
+                              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fa fa-times"></i>
+                                Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <!-- Modal 10 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                              <div class="rl"></div>
+                            </div>
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                  <!-- Project Details Go Here -->
+                                  <h2>DOTA 2 - Tournament</h2>
+                                  <p class="item-intro text-muted">The Game is on !!</p>
+                                  <img class="img-fluid d-block mx-auto" src="image/ece/dota2.jpg" alt="">
+                                  <div class="row">
+
+                                  <p> <b>Competition method</b>: 5 versus 5 [Team play]<br>
+<b>Game mode:</b> Captain's Mode (CM)<br>
+<b>Sides:</b> (Radiant / Dire) will be determined by the host.<br>
+<b>Victory condition:</b> The first team to destroy the other team’s ancient.<br>
+<b>LOBBY SETTINGS:</b>
+Mode: Captains Mode (All Pick when a rehost is needed [same hero, same player])<br>
+Server: Singapore<br>
+Password: will be given during the tournament.<br>
+<b>SPECIFIC RULES:</b>
+During the tournament all members team must have their team tag during the event.
+Players must be prepared before their scheduled games.
+All competitors must be present 15 minutes prior to their scheduled match.
+Teams who fail to join the room at the first fifteen (15) minutes from the start of their schedules will automatically lose at the game one (1) of their match series. (excuses are not entertained, even if the game is updating, etc.)
+Teams who fail to join the room at the next fifteen (15) minutes will automatically lose the whole series (game of three matches).
+Players who are registered must be the one to play. If a reserve is needed, only the listed reserves must also play.
+Final calls are irrevocable.
+
+
+                                   </p>
+                                </div>
+
+                                  <ul class="list-unstyled">
+                             <li><b>Entry:</b> 5-7 players per team (5 main, 2 reserves)]</li>
+                             <li><b>Duration:</b> Two full Days!!</li>
+                             <li><b>Where:</b> ISE lab</li>
+                           </ul>
+                                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                    <i class="fa fa-times"></i>
+                                    Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+ <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
